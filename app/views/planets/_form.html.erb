@@ -1,0 +1,28 @@
+<% if @planet.errors.any? %>
+ <ul>
+   <%@planet.errors.full_messages.each do |error| %>
+   <li> <%= error %></li>
+   <% end %>
+ </ul>
+ <% end %>
+
+<%= form_for @planet do |f| %>
+<br/>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+<br/>
+  <%= f.label :gravity %>
+  <%= f.number_field :gravity, :class => "text_field", :step => 'any' %>
+<br/>
+  <%= f.label :atmosphere %>
+  <%= f.check_box :atmosphere %>
+<br/>
+  <%= f.label :distance_from_earth %>
+  <%= f.number_field :distance_from_earth %>
+<br/>
+  <%= f.label :radius %>
+  <%= f.number_field :radius %>
+<br/>
+  <%= f.submit %>
+
+<% end %>

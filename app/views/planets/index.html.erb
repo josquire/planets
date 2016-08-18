@@ -1,0 +1,16 @@
+<h1>Planets In Our Solar System</h1>
+
+<% if @planets.any? %>
+
+  <ul>
+    <% @planets.each do |planet| %>
+    <li>
+      <%= link_to planet.name, planet_path(planet) %>
+    </li>
+    <% end %>
+  </ul>
+  <% else %>
+
+  <% end %>
+
+  <%= link_to 'Create Planet', new_planet_path %>

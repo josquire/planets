@@ -1,0 +1,23 @@
+<h1><%=@planet.name%> Info</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Gravity</th>
+      <th>Atmosphere</th>
+      <th>Distance from Earth</th>
+      <th>Radius</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= @planet.gravity %></td>
+      <td><%= @planet.atmosphere %></td>
+      <td><%= @planet.distance_from_earth %></td>
+      <td><%= @planet.radius %></td>
+    </tr>
+  </tbody>
+</table>
+
+<%= link_to 'Edit Planet Info', edit_planet_path(@planet) %>
+<%= link_to 'Delete', planet_path(@planet), method: :delete %>
