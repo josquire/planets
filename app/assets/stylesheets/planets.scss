@@ -1,3 +1,102 @@
-// Place all the styles related to the Planets controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+h1, h2, h3 {
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fbfb51;
+}
+
+.header img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  background: #555;
+}
+
+// .header h1 {
+//   position: relative;
+//   top: 18px;
+//   left: 10px;
+// }
+
+body {
+  background-color: #000099;
+}
+
+.form {
+  background: -webkit-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+  background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+  background: linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+  margin: auto;
+  position: relative;
+  width: 550px;
+  height: 450px;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 24px;
+  font-weight: bold;
+  color: #09C;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #999;
+  border: inset 1px solid #333;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+input {
+  width: 375px;
+  display: block;
+  border: 1px solid #999;
+  height: 25px;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+a {
+  color: #fbfb51;
+  text-decoration: none;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 150%;
+  padding: 25px;
+}
+
+a:hover {
+  color: #ff4dff;
+  text-decoration: underline;
+}
+
+table {
+color: #333;
+font-family: Helvetica, Arial, sans-serif;
+width: 640px;
+border-collapse:
+collapse; border-spacing: 0;
+width: 85%;
+margin: 90px;
+}
+
+td, th { border: 1px solid #CCC; height: 30px; }
+
+th {
+background: #999999;
+font-weight: bold;
+}
+
+td {
+background: #d9d9d9;
+text-align: center;
+}
+
+ul {
+  text-align: left;
+  text-transform: capitalize;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #fbfb51;
+  list-style: square outside;
+  margin: 50px 40%;
+}
